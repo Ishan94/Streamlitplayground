@@ -9,18 +9,18 @@ st.markdown(
         color: red;
     }
 
-    .st-key-first-expander [data-testid="stExpander"] details summary,
-    .st-key-first-expander [data-testid="stExpander"] details[open] summary {
+    [data-testid="stExpander"]:nth-of-type(1) details summary,
+    [data-testid="stExpander"]:nth-of-type(1) details[open] summary {
         background-color: #1f77ff;
         color: white;
     }
 
-    .st-key-second-expander [data-testid="stExpander"] details summary {
+    [data-testid="stExpander"]:nth-of-type(2) details summary {
         background-color: #2ca02c;
         color: white;
     }
 
-    .st-key-second-expander [data-testid="stExpander"] details[open] summary {
+    [data-testid="stExpander"]:nth-of-type(2) details[open] summary {
         background-color: #ffd700;
         color: black;
     }
@@ -30,11 +30,9 @@ st.markdown(
 )
 st.title("Expander Test")
 
-with st.container(key="first-expander"):
-    with st.expander("Click ME!"):
-        st.write("This is content")
-        st.button("A button", key="first_expander_button")
+with st.expander("Click ME!"):
+    st.write("This is content")
+    st.button("A button", key="first_expander_button")
 
-with st.container(key="second-expander"):
-    with st.expander("Another one"):
-        st.write("More content here")
+with st.expander("Another one"):
+    st.write("More content here")
