@@ -15,6 +15,10 @@ st.markdown(
         color: white;
     }
 
+    [data-testid="stVerticalBlock"] > div:nth-last-child(2) [data-testid="stExpander"] [data-testid="stMarkdownContainer"] p {
+        color: brown;
+    }
+
     [data-testid="stVerticalBlock"] > div:nth-last-child(1) [data-testid="stExpander"] details summary {
         background-color: #2ca02c;
         color: white;
