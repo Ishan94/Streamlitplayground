@@ -9,18 +9,18 @@ st.markdown(
         color: red;
     }
 
-    [data-testid="stExpander"]:nth-of-type(1) details summary,
-    [data-testid="stExpander"]:nth-of-type(1) details[open] summary {
+    [data-testid="stVerticalBlock"] > div:nth-last-child(2) [data-testid="stExpander"] details summary,
+    [data-testid="stVerticalBlock"] > div:nth-last-child(2) [data-testid="stExpander"] details[open] summary {
         background-color: #1f77ff;
         color: white;
     }
 
-    [data-testid="stExpander"]:nth-of-type(2) details summary {
+    [data-testid="stVerticalBlock"] > div:nth-last-child(1) [data-testid="stExpander"] details summary {
         background-color: #2ca02c;
         color: white;
     }
 
-    [data-testid="stExpander"]:nth-of-type(2) details[open] summary {
+    [data-testid="stVerticalBlock"] > div:nth-last-child(1) [data-testid="stExpander"] details[open] summary {
         background-color: #ffd700;
         color: black;
     }
