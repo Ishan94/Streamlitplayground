@@ -33,7 +33,7 @@ st.title("Expander Test")
 with st.container(key="first-expander"):
     with st.expander("Click ME!"):
         st.write("This is content")
-        st.button("A button")
+        st.button("A button", key="first_expander_button")
 
 with st.container(key="second-expander"):
     with st.expander("Another one"):
